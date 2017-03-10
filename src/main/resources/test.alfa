@@ -1,0 +1,12 @@
+policyset topLevel {
+    policy printerPolicy {
+        rule {
+            permit
+            target clause foo.bar == "foo"
+        }
+        rule {
+            deny
+            target clause bar.foo != "else"
+        }
+    }
+}
