@@ -19,9 +19,9 @@ policyset_expr : BR_OPEN policy+ BR_CLOSE;
 policy : Policy policy_name policy_expr;
 
 policy_name : NAME;
-policy_expr : BR_OPEN rule+ BR_CLOSE;
+policy_expr : BR_OPEN a_rule+ BR_CLOSE;
 
-rule : Rule rule_expr;
+a_rule : Rule rule_expr;
 
 rule_expr : BR_OPEN rule_effect target BR_CLOSE;
 
